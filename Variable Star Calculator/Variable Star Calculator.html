@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Chris was here</title>
+	<link rel="stylesheet" type="text/css" href="../../Websheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- this will be the true URL <base href="https://www.chrisland.net/" target="_blank"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../icon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="VSS.js"></script>
+</head>
+
+<style>
+  table{
+	   border:black solid 1px;
+	   border-collapse:collapse; 
+	}
+  th, td {
+       padding: 15px;
+    }
+</style>
+<body>
+  <!-- http://www.vendian.org/mncharity/dir3/starcolor/ -->
+  
+  <h2 class="goodlooking sansserif">Click a button to find out the next <abbr title="or minimum for eclipsing binaries">maximum</abbr> of the corresponding variable star.</h2>
+  <table class="sansserif">
+    <tr>
+      <th>
+        <p>Cephieds</p>
+      </th>
+      <th>
+        <p>Eclipsing Binaries</p>
+      </th>
+      <th>
+        <p>Long Period Variables</p>
+      </tr>
+    <tr style="text-align:center; background-color:#000000; padding: 15px;">
+      <td>
+        <button type="button" onclick='Eta_Aquilae_Display();' class="standardbutton puffy" style="background-color:#f8f7ff;">Eta Aquilae</button>
+        <button type="button" onclick='Delta_Cephei_Display();' class="standardbutton puffy" style="background-color:#fff9f9;">Delta Cephei</button>
+      </td>
+      <td>
+        <button type="button" onclick='Algol_Display();' class="standardbutton puffy" style="background-color:#ffd2a1;">Algol</button>
+        <button type="button" onclick='Beta_Lyrae_Display();' class="standardbutton puffy" style="background-color:#aabfff;">Sheliak</button>
+      </td>
+      <td>
+        <button type="button" onclick='Mira_Display();' class="standardbutton puffy" style="background-color:#ffcc6f;">Mira</button>
+      </td>
+    </tr>
+  </table>
+  <p id="bzoomer" class="goodlooking sansserif"></p>
+</body>
+</html>
